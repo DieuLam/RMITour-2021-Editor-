@@ -47,13 +47,13 @@ public class SetNavigationTarget : MonoBehaviour
         Target currentTarget = navigationTargetObjects.Find(x => x.Name.Equals(selectedText));
         if (currentTarget != null) {
             targetPosition = currentTarget.PositionObject.transform.position;
-            lineToggle = !lineToggle;
+            lineToggle = true;
             line.enabled = lineToggle;
         }
     }
 
-    public void ToggleVisibility() {
-        lineToggle = !lineToggle;
-        line.enabled = lineToggle;
-    }
+    // public void ToggleVisibility() {
+    //     lineToggle = !lineToggle;
+    //     line.enabled = lineToggle;
+    // }
 }
