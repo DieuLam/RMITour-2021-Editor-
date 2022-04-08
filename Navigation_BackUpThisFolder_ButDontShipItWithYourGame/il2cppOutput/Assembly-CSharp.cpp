@@ -3721,7 +3721,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SetNavigationTarget_SetCurrentNavigation
 		Target_t5E0C0864CEA07701AF639C0AFAC19928DB873FC5* L_12 = V_1;
 		if (!L_12)
 		{
-			goto IL_0076;
+			goto IL_0077;
 		}
 	}
 	{
@@ -3743,10 +3743,18 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SetNavigationTarget_SetCurrentNavigation
 		bool L_18 = __this->___lineToggle_9;
 		NullCheck(L_17);
 		Renderer_set_enabled_m015E6D7B825528A31182F267234CC6A925F71DA8(L_17, L_18, NULL);
+		return;
 	}
 
-IL_0076:
+IL_0077:
 	{
+		// lineToggle = false;
+		__this->___lineToggle_9 = (bool)0;
+		// line.enabled = lineToggle;
+		LineRenderer_tEFEF960672DB69CB14B6D181FAE6292F0CF8B63D* L_19 = __this->___line_7;
+		bool L_20 = __this->___lineToggle_9;
+		NullCheck(L_19);
+		Renderer_set_enabled_m015E6D7B825528A31182F267234CC6A925F71DA8(L_19, L_20, NULL);
 		// }
 		return;
 	}
