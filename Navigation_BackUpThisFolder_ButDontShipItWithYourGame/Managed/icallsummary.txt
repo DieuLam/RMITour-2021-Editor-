@@ -375,6 +375,8 @@ UnityEngine.Gradient::Internal_Equals
 UnityEngine.Gradient::Init
 UnityEngine.Gradient::Cleanup
 UnityEngine.Graphics::Internal_GetMaxDrawMeshInstanceCount
+UnityEngine.Graphics::CopyTexture_Full
+UnityEngine.Graphics::Internal_BlitMaterial5
 UnityEngine.Graphics::Internal_SetNullRT
 UnityEngine.Graphics::Internal_SetRTSimple_Injected
 UnityEngine.GUI::get_changed
@@ -803,6 +805,7 @@ UnityEngine.Texture2D::GetPixelBilinearImpl_Injected
 UnityEngine.Texture2D::SetAllPixels32
 UnityEngine.Texture2D::SetPixelImpl_Injected
 UnityEngine.Texture2D::UpdateExternalTexture
+UnityEngine.Texture2D::GetPixels32
 UnityEngine.Texture2D::get_whiteTexture
 UnityEngine.Texture2D::get_format
 UnityEngine.Texture2DArray::Internal_CreateImpl
