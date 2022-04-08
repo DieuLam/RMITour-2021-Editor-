@@ -15,14 +15,14 @@ public class SetNavigationTarget : MonoBehaviour
     private LineRenderer line;  // line to display the path
     private Vector3 targetPosition = Vector3.zero;
 
-    // private bool lineToggle = false;
+    private bool lineToggle = false;
 
     // Start is called before the first frame update
     public void Start()
     {
         path = new NavMeshPath();
         line = transform.GetComponent<LineRenderer>();
-        line.enabled = false;
+        line.enabled = lineToggle;
     }
 
     // Update is called once per frame
@@ -47,10 +47,12 @@ public class SetNavigationTarget : MonoBehaviour
         Target currentTarget = navigationTargetObjects.Find(x => x.Name.Equals(selectedText));
         if (currentTarget != null) {
             targetPosition = currentTarget.PositionObject.transform.position;
-            // lineToggle = true;
-            line.enabled = true;
+            lineToggle = true;
+            line.enabled = lineToggle;
         } else {
-            line.enabled = false;
+            lineToggle = false;
+            line.enabled = lineToggle;
+            // line.enabled = false;
         }
     }
 
