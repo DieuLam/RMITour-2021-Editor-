@@ -49,6 +49,10 @@ public class SetNavigationTarget : MonoBehaviour
             targetPosition = currentTarget.PositionObject.transform.position;
             lineToggle = true;
             line.enabled = lineToggle;
+        } else {
+            lineToggle = false;
+            line.enabled = lineToggle;
+            // line.enabled = false;
         }
     }
 
