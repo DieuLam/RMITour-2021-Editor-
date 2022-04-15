@@ -5,10 +5,9 @@ using UnityEngine.UI;
 
 public class UpdateGPSText : MonoBehaviour
 {
-    public Text coordinates;
+    public Text coordinates; 
 
-    private void Update()
-    {
-        coordinates.text = "lat: " + GPS.Instance.latitude.ToString() + " Lon:" + GPS.Instance.longitude.ToString();
+    private void Update() {
+        coordinates.text = "Lat: " + GPS.Instance.z.ToString() + " Lon:" + GPS.Instance.x.ToString();
     }
 }

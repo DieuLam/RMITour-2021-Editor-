@@ -7,6 +7,7 @@ public class GPS : MonoBehaviour
     public static GPS Instance { set; get; }
     public float latitude;
     public float longitude;
+    public float z, x;
 
     private void Start()
     {
@@ -45,6 +46,9 @@ public class GPS : MonoBehaviour
 
         latitude = Input.location.lastData.latitude;
         longitude = Input.location.lastData.longitude;
+
+        z = (latitude- 10.72900f) * 100000 ;   // z
+        x = (longitude - 106.69000f) * 10000;  // x
 
         yield break;
     }
