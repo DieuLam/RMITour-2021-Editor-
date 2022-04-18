@@ -15,6 +15,8 @@ public class SetNavigationTarget : MonoBehaviour
     private LineRenderer line;  // line to display the path
     private Vector3 targetPosition = Vector3.zero;
 
+    public static Transform Desti; 
+
     private bool lineToggle = false;
 
     // Start is called before the first frame update
@@ -47,6 +49,7 @@ public class SetNavigationTarget : MonoBehaviour
         Target currentTarget = navigationTargetObjects.Find(x => x.Name.Equals(selectedText));
         if (currentTarget != null) {
             targetPosition = currentTarget.PositionObject.transform.position;
+            Desti = currentTarget.PositionObject.transform;
             lineToggle = true;
             line.enabled = lineToggle;
         } else {
