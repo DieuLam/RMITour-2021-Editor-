@@ -16,6 +16,7 @@ public class SetNavigationTarget : MonoBehaviour
     private Vector3 targetPosition = Vector3.zero;
 
     private bool lineToggle = false;
+    public static Transform tempDes;
 
     // Start is called before the first frame update
     public void Start()
@@ -47,6 +48,7 @@ public class SetNavigationTarget : MonoBehaviour
         Target currentTarget = navigationTargetObjects.Find(x => x.Name.Equals(selectedText));
         if (currentTarget != null) {
             targetPosition = currentTarget.PositionObject.transform.position;
+            tempDes = currentTarget.PositionObject.transform;
             lineToggle = true;
             line.enabled = lineToggle;
         }

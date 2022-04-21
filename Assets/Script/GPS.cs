@@ -25,19 +25,20 @@ public class GPS : MonoBehaviour
 
         Input.location.Start();
         int maxWait = 20;
+
         while(Input.location.status == LocationServiceStatus.Initializing && maxWait > 0)
         {
             yield return new WaitForSeconds(1);
             maxWait--;
         }
 
-        if (maxWait<=0)
+        if (maxWait <= 0)
         {
             Debug.Log("Timed out");
             yield break;
         }
 
-        if(Input.location.status == LocationServiceStatus.Failed)
+        if (Input.location.status == LocationServiceStatus.Failed)
         {
             Debug.Log("Unable to determin device location");
             yield break;

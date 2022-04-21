@@ -15,6 +15,7 @@ public class CalculatePath : MonoBehaviour
 
     private void Update()
     {
+        Destination = SetNavigationTarget.tempDes;
         distance = (Destination.transform.position - transform.position).magnitude;
 
         DistanceText.text = "Distance: " + distance.ToString("F1") + " m";

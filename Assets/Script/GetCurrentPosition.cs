@@ -14,16 +14,22 @@ public class GetCurrentPosition : MonoBehaviour
     IEnumerator Teleport()
     {
 
-        yield return new WaitForSeconds(2);
-        float lat = ((GPS.Instance.latitude - 10.72900f) * 100000) - 6.41f;   // z
-        float lon = ((GPS.Instance.longitude - 106.69000f) * 10000) + 15.52f;  // x
-        // transform.position = new Vector3(lon, 2f, lat);
+        yield return new WaitForSeconds(3);
 
-        // hard coded value
-        float x = 60.00f + 1255.49f;
-        float z = 30.00f + 1192.00f;
-        float y = -1639.862f;
-        transform.position = new Vector3(x, y, z);
+        // raw data from sensor
+        float lat = GPS.Instance.latitude;
+        float lon = GPS.Instance.longitude;
+
+        // hard code position
+        // float lat = ;
+        // float lon = ;
+
+        // calculate to fit in unity
+        float z = ((lat - 10.72900f) * 100000) - 35;   // latitude
+        float x = ((lon - 106.69600f) * 100000) - 25 - 13;  // longitude
+        float y = -1639.862f;  // height in unity
+
+        transform.position = new Vector3(x, y, z);  // move the current location in Unity
 
     }
 }
