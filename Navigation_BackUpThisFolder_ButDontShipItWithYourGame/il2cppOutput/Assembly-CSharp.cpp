@@ -231,6 +231,8 @@ struct Renderer_t320575F223BCB177A982E5DDB5DB19FAA89E7FBF;
 struct Result_tF578DE3ECC8EB51CFB66605B8ADCD433C837EBAF;
 // System.Runtime.Serialization.SafeSerializationManager
 struct SafeSerializationManager_tCBB85B95DFD1634237140CD892E82D06ECB3F5E6;
+// SceneManagement
+struct SceneManagement_t0728113317AD7ED6723836F3020BDBC4638C4280;
 // UnityEngine.UI.Selectable
 struct Selectable_t3251808068A17B8E92FB33590A4C2FA66D456712;
 // SetNavigationTarget
@@ -313,6 +315,7 @@ IL2CPP_EXTERN_C RuntimeClass* NavMeshPath_tC77ABF4A25FC0F0A94E8A70E304E114FE690A
 IL2CPP_EXTERN_C RuntimeClass* NotSupportedException_t1429765983D409BD2986508963C98D214E4EBF4A_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* Predicate_1_t20287AEA8C42BE98D3E87A6245361D7AF842FC70_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* SceneManager_tA0EF56A88ACA4A15731AF7FDC10A869FA4C698FA_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* SetNavigationTarget_tA053396DB09D0C8D8DAF5086C1A993785B7196A0_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* Texture2D_tE6505BC111DD8A424A9DBE8E05D7D09E11FFFCF4_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* U3CStartLocationServiceU3Ed__7_t001F5C739E226DE23D4BA2C29C47890856D206B9_il2cpp_TypeInfo_var;
@@ -2046,6 +2049,11 @@ struct GetImageAlternative_t4AD9915FCE33B62597BF3AE183556E5D68801C68  : public M
 	RuntimeObject* ___reader_8;
 };
 
+// SceneManagement
+struct SceneManagement_t0728113317AD7ED6723836F3020BDBC4638C4280  : public MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71
+{
+};
+
 // SetNavigationTarget
 struct SetNavigationTarget_tA053396DB09D0C8D8DAF5086C1A993785B7196A0  : public MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71
 {
@@ -2975,6 +2983,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR LocationInfo_tBFD49220A54B71CDF564F61822F7B8D
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float LocationInfo_get_latitude_mAF0A46443555AF18EA3C516292CB92B1669CA863 (LocationInfo_tBFD49220A54B71CDF564F61822F7B8D524465441* __this, const RuntimeMethod* method) ;
 // System.Single UnityEngine.LocationInfo::get_longitude()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float LocationInfo_get_longitude_mCB720DD0E139B7C614F78D40595E1BBF1F5433A2 (LocationInfo_tBFD49220A54B71CDF564F61822F7B8D524465441* __this, const RuntimeMethod* method) ;
+// System.Void UnityEngine.SceneManagement.SceneManager::LoadScene(System.Int32)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SceneManager_LoadScene_mE00D17D79AD74B307F913BBF296A36115548DB6D (int32_t ___sceneBuildIndex0, const RuntimeMethod* method) ;
 // System.Void UnityEngine.AI.NavMeshPath::.ctor()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void NavMeshPath__ctor_mEA40BFC2492814FFC97A71C3AEC2154A9415C37F (NavMeshPath_tC77ABF4A25FC0F0A94E8A70E304E114FE690A3A7* __this, const RuntimeMethod* method) ;
 // T UnityEngine.Component::GetComponent<UnityEngine.LineRenderer>()
@@ -3280,10 +3290,10 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool U3CTeleportU3Ed__1_MoveNext_mE22C779D27B
 IL_0017:
 	{
 		__this->___U3CU3E1__state_0 = (-1);
-		// yield return new WaitForSeconds(5);
+		// yield return new WaitForSeconds(3);
 		WaitForSeconds_tF179DF251655B8DF044952E70A60DF4B358A3DD3* L_4 = (WaitForSeconds_tF179DF251655B8DF044952E70A60DF4B358A3DD3*)il2cpp_codegen_object_new(WaitForSeconds_tF179DF251655B8DF044952E70A60DF4B358A3DD3_il2cpp_TypeInfo_var);
 		NullCheck(L_4);
-		WaitForSeconds__ctor_m579F95BADEDBAB4B3A7E302C6EE3995926EF2EFC(L_4, (5.0f), NULL);
+		WaitForSeconds__ctor_m579F95BADEDBAB4B3A7E302C6EE3995926EF2EFC(L_4, (3.0f), NULL);
 		__this->___U3CU3E2__current_1 = L_4;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CU3E2__current_1), (void*)L_4);
 		__this->___U3CU3E1__state_0 = 1;
@@ -3701,7 +3711,7 @@ IL_007a:
 
 IL_0090:
 	{
-		// if (maxWait<=0)
+		// if (maxWait <= 0)
 		int32_t L_13 = __this->___U3CmaxWaitU3E5__2_3;
 		if ((((int32_t)L_13) > ((int32_t)0)))
 		{
@@ -3718,7 +3728,7 @@ IL_0090:
 
 IL_00a5:
 	{
-		// if(Input.location.status == LocationServiceStatus.Failed)
+		// if (Input.location.status == LocationServiceStatus.Failed)
 		LocationService_tF2F2720FE2C07562EBFD128889F9A99F4B41B1B2* L_14;
 		L_14 = Input_get_location_m6F753D9369213F07EC556FF6240D723DCF3C689D(NULL);
 		NullCheck(L_14);
@@ -3791,6 +3801,56 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* U3CStartLocationServiceU3Ed__7
 	{
 		RuntimeObject* L_0 = __this->___U3CU3E2__current_1;
 		return L_0;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void SceneManagement::GoToSampleScene()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SceneManagement_GoToSampleScene_m1331DD24B077548E584D144D32F4E28EBA8F24ED (SceneManagement_t0728113317AD7ED6723836F3020BDBC4638C4280* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&SceneManager_tA0EF56A88ACA4A15731AF7FDC10A869FA4C698FA_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// SceneManager.LoadScene(1);
+		il2cpp_codegen_runtime_class_init_inline(SceneManager_tA0EF56A88ACA4A15731AF7FDC10A869FA4C698FA_il2cpp_TypeInfo_var);
+		SceneManager_LoadScene_mE00D17D79AD74B307F913BBF296A36115548DB6D(1, NULL);
+		// }
+		return;
+	}
+}
+// System.Void SceneManagement::GoToUIScene()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SceneManagement_GoToUIScene_mC264C9337E1BD16DCD8562C09363862CBA9CFAB9 (SceneManagement_t0728113317AD7ED6723836F3020BDBC4638C4280* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&SceneManager_tA0EF56A88ACA4A15731AF7FDC10A869FA4C698FA_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// SceneManager.LoadScene(0);
+		il2cpp_codegen_runtime_class_init_inline(SceneManager_tA0EF56A88ACA4A15731AF7FDC10A869FA4C698FA_il2cpp_TypeInfo_var);
+		SceneManager_LoadScene_mE00D17D79AD74B307F913BBF296A36115548DB6D(0, NULL);
+		// }
+		return;
+	}
+}
+// System.Void SceneManagement::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SceneManagement__ctor_m4BF527C2FDB7A148441317813DDE923896E275F2 (SceneManagement_t0728113317AD7ED6723836F3020BDBC4638C4280* __this, const RuntimeMethod* method) 
+{
+	{
+		MonoBehaviour__ctor_m592DB0105CA0BC97AA1C5F4AD27B12D68A3B7C1E(__this, NULL);
+		return;
 	}
 }
 #ifdef __clang__
