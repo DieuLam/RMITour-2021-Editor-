@@ -86,11 +86,17 @@ extern void U3CU3Ec__DisplayClass9_0__ctor_m9F1E5D7818C27A3F6ED404E6AF31C5CF2047
 extern void U3CU3Ec__DisplayClass9_0_U3CSetCurrentNavigationTargetU3Eb__0_m3B34ADDD4983D13AAF1ECDAA5929E8E6038BB56F (void);
 // 0x00000025 System.Void Target::.ctor()
 extern void Target__ctor_m5524C5EEF36FA6DB1E6B5BFA323B37E68635C216 (void);
-// 0x00000026 System.Void UpdateGPSText::Update()
+// 0x00000026 System.Void Setnavigation::Start()
+extern void Setnavigation_Start_mABE95CB1648806FAB225B3AEA976DD8B1E7C8F64 (void);
+// 0x00000027 System.Void Setnavigation::Update()
+extern void Setnavigation_Update_m2EC7851230FDCBE3B045F31A7A71CACD5D9CA45B (void);
+// 0x00000028 System.Void Setnavigation::.ctor()
+extern void Setnavigation__ctor_m1AB407A775581AC65D0B8431F3213E81597C5DF3 (void);
+// 0x00000029 System.Void UpdateGPSText::Update()
 extern void UpdateGPSText_Update_m32085EA3D0F6B37489FEE6E20264E680894CCC3C (void);
-// 0x00000027 System.Void UpdateGPSText::.ctor()
+// 0x0000002A System.Void UpdateGPSText::.ctor()
 extern void UpdateGPSText__ctor_mFB50DBB84EA8794F55B704DE2931E203A82CB290 (void);
-static Il2CppMethodPointer s_methodPointers[39] = 
+static Il2CppMethodPointer s_methodPointers[42] = 
 {
 	CalculatePath_Update_mA5C6CA8195B391B247F258E0AC3DAF426EB81D42,
 	CalculatePath__ctor_mA6150866C6AFF01EDA7E405D6508B75B898FF038,
@@ -129,56 +135,62 @@ static Il2CppMethodPointer s_methodPointers[39] =
 	U3CU3Ec__DisplayClass9_0__ctor_m9F1E5D7818C27A3F6ED404E6AF31C5CF20471846,
 	U3CU3Ec__DisplayClass9_0_U3CSetCurrentNavigationTargetU3Eb__0_m3B34ADDD4983D13AAF1ECDAA5929E8E6038BB56F,
 	Target__ctor_m5524C5EEF36FA6DB1E6B5BFA323B37E68635C216,
+	Setnavigation_Start_mABE95CB1648806FAB225B3AEA976DD8B1E7C8F64,
+	Setnavigation_Update_m2EC7851230FDCBE3B045F31A7A71CACD5D9CA45B,
+	Setnavigation__ctor_m1AB407A775581AC65D0B8431F3213E81597C5DF3,
 	UpdateGPSText_Update_m32085EA3D0F6B37489FEE6E20264E680894CCC3C,
 	UpdateGPSText__ctor_mFB50DBB84EA8794F55B704DE2931E203A82CB290,
 };
-static const int32_t s_InvokerIndices[39] = 
+static const int32_t s_InvokerIndices[42] = 
 {
-	4511,
-	4511,
-	4511,
-	4511,
-	4511,
-	4511,
-	4414,
-	4511,
-	3634,
-	4511,
-	4345,
-	4414,
-	4511,
-	4414,
-	4511,
-	4511,
-	7019,
-	7116,
-	4511,
-	4414,
-	4511,
-	3634,
-	4511,
-	4345,
-	4414,
-	4511,
-	4414,
-	4511,
-	4511,
-	4511,
-	4511,
-	4511,
-	3634,
-	4511,
-	4511,
-	2577,
-	4511,
-	4511,
-	4511,
+	4509,
+	4509,
+	4509,
+	4509,
+	4509,
+	4509,
+	4412,
+	4509,
+	3632,
+	4509,
+	4343,
+	4412,
+	4509,
+	4412,
+	4509,
+	4509,
+	7017,
+	7114,
+	4509,
+	4412,
+	4509,
+	3632,
+	4509,
+	4343,
+	4412,
+	4509,
+	4412,
+	4509,
+	4509,
+	4509,
+	4509,
+	4509,
+	3632,
+	4509,
+	4509,
+	2575,
+	4509,
+	4509,
+	4509,
+	4509,
+	4509,
+	4509,
 };
 IL2CPP_EXTERN_C const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule;
 const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule = 
 {
 	"Assembly-CSharp.dll",
-	39,
+	42,
 	s_methodPointers,
 	0,
 	NULL,
