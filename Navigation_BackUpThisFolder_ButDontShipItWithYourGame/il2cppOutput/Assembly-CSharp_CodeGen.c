@@ -66,31 +66,43 @@ extern void U3CStartLocationServiceU3Ed__7_System_Collections_Generic_IEnumerato
 extern void U3CStartLocationServiceU3Ed__7_System_Collections_IEnumerator_Reset_m776403A93518C26C72B196691A927C8E7D03D511 (void);
 // 0x0000001B System.Object GPS/<StartLocationService>d__7::System.Collections.IEnumerator.get_Current()
 extern void U3CStartLocationServiceU3Ed__7_System_Collections_IEnumerator_get_Current_m94BAF98065BE277CD64F22A8378A8CA26DF686A4 (void);
-// 0x0000001C System.Void SceneManagement::GoToSampleScene()
+// 0x0000001C System.Void ImageTracking::Awake()
+extern void ImageTracking_Awake_m45163218D2F5CE540465973D9A41DCBC31050A45 (void);
+// 0x0000001D System.Void ImageTracking::OnEnable()
+extern void ImageTracking_OnEnable_m6DEDEE1663EC7AA2AB1000CF58776EC231A744B7 (void);
+// 0x0000001E System.Void ImageTracking::OnDisable()
+extern void ImageTracking_OnDisable_m62F1D5572FB9F965AE9E9D881D14D2747FFEE797 (void);
+// 0x0000001F System.Void ImageTracking::ImageChanged(UnityEngine.XR.ARFoundation.ARTrackedImagesChangedEventArgs)
+extern void ImageTracking_ImageChanged_mDA00F95F698FB3F71F4229530251E403861B9B76 (void);
+// 0x00000020 System.Void ImageTracking::UpdateImage(UnityEngine.XR.ARFoundation.ARTrackedImage)
+extern void ImageTracking_UpdateImage_m34C65707C9429E72DDE79B5A2800710CF5750904 (void);
+// 0x00000021 System.Void ImageTracking::.ctor()
+extern void ImageTracking__ctor_m88C12006AC3BAED3DAA4F0E0544DAA5294D96A5A (void);
+// 0x00000022 System.Void SceneManagement::GoToSampleScene()
 extern void SceneManagement_GoToSampleScene_m1331DD24B077548E584D144D32F4E28EBA8F24ED (void);
-// 0x0000001D System.Void SceneManagement::GoToUIScene()
+// 0x00000023 System.Void SceneManagement::GoToUIScene()
 extern void SceneManagement_GoToUIScene_mC264C9337E1BD16DCD8562C09363862CBA9CFAB9 (void);
-// 0x0000001E System.Void SceneManagement::.ctor()
+// 0x00000024 System.Void SceneManagement::.ctor()
 extern void SceneManagement__ctor_m4BF527C2FDB7A148441317813DDE923896E275F2 (void);
-// 0x0000001F System.Void SetNavigationTarget::Start()
+// 0x00000025 System.Void SetNavigationTarget::Start()
 extern void SetNavigationTarget_Start_m0CFEEDEE4BC72DD7486B429949C561630DED0FB6 (void);
-// 0x00000020 System.Void SetNavigationTarget::Update()
+// 0x00000026 System.Void SetNavigationTarget::Update()
 extern void SetNavigationTarget_Update_m24DD885D08F1EA5725F6B65E56B8706FBC72EF66 (void);
-// 0x00000021 System.Void SetNavigationTarget::SetCurrentNavigationTarget(System.Int32)
+// 0x00000027 System.Void SetNavigationTarget::SetCurrentNavigationTarget(System.Int32)
 extern void SetNavigationTarget_SetCurrentNavigationTarget_mCF7202CD55D545AB5824302F77079A6E010E0CF5 (void);
-// 0x00000022 System.Void SetNavigationTarget::.ctor()
+// 0x00000028 System.Void SetNavigationTarget::.ctor()
 extern void SetNavigationTarget__ctor_m40AA3B1240C215E094DE629C3BFAD2C4859E6D18 (void);
-// 0x00000023 System.Void SetNavigationTarget/<>c__DisplayClass9_0::.ctor()
+// 0x00000029 System.Void SetNavigationTarget/<>c__DisplayClass9_0::.ctor()
 extern void U3CU3Ec__DisplayClass9_0__ctor_m9F1E5D7818C27A3F6ED404E6AF31C5CF20471846 (void);
-// 0x00000024 System.Boolean SetNavigationTarget/<>c__DisplayClass9_0::<SetCurrentNavigationTarget>b__0(Target)
+// 0x0000002A System.Boolean SetNavigationTarget/<>c__DisplayClass9_0::<SetCurrentNavigationTarget>b__0(Target)
 extern void U3CU3Ec__DisplayClass9_0_U3CSetCurrentNavigationTargetU3Eb__0_m3B34ADDD4983D13AAF1ECDAA5929E8E6038BB56F (void);
-// 0x00000025 System.Void Target::.ctor()
+// 0x0000002B System.Void Target::.ctor()
 extern void Target__ctor_m5524C5EEF36FA6DB1E6B5BFA323B37E68635C216 (void);
-// 0x00000026 System.Void UpdateGPSText::Update()
+// 0x0000002C System.Void UpdateGPSText::Update()
 extern void UpdateGPSText_Update_m32085EA3D0F6B37489FEE6E20264E680894CCC3C (void);
-// 0x00000027 System.Void UpdateGPSText::.ctor()
+// 0x0000002D System.Void UpdateGPSText::.ctor()
 extern void UpdateGPSText__ctor_mFB50DBB84EA8794F55B704DE2931E203A82CB290 (void);
-static Il2CppMethodPointer s_methodPointers[39] = 
+static Il2CppMethodPointer s_methodPointers[45] = 
 {
 	CalculatePath_Update_mA5C6CA8195B391B247F258E0AC3DAF426EB81D42,
 	CalculatePath__ctor_mA6150866C6AFF01EDA7E405D6508B75B898FF038,
@@ -119,6 +131,12 @@ static Il2CppMethodPointer s_methodPointers[39] =
 	U3CStartLocationServiceU3Ed__7_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m754B9172E4C11DC85C6E255CCB291CDE3DB3F7FE,
 	U3CStartLocationServiceU3Ed__7_System_Collections_IEnumerator_Reset_m776403A93518C26C72B196691A927C8E7D03D511,
 	U3CStartLocationServiceU3Ed__7_System_Collections_IEnumerator_get_Current_m94BAF98065BE277CD64F22A8378A8CA26DF686A4,
+	ImageTracking_Awake_m45163218D2F5CE540465973D9A41DCBC31050A45,
+	ImageTracking_OnEnable_m6DEDEE1663EC7AA2AB1000CF58776EC231A744B7,
+	ImageTracking_OnDisable_m62F1D5572FB9F965AE9E9D881D14D2747FFEE797,
+	ImageTracking_ImageChanged_mDA00F95F698FB3F71F4229530251E403861B9B76,
+	ImageTracking_UpdateImage_m34C65707C9429E72DDE79B5A2800710CF5750904,
+	ImageTracking__ctor_m88C12006AC3BAED3DAA4F0E0544DAA5294D96A5A,
 	SceneManagement_GoToSampleScene_m1331DD24B077548E584D144D32F4E28EBA8F24ED,
 	SceneManagement_GoToUIScene_mC264C9337E1BD16DCD8562C09363862CBA9CFAB9,
 	SceneManagement__ctor_m4BF527C2FDB7A148441317813DDE923896E275F2,
@@ -132,53 +150,59 @@ static Il2CppMethodPointer s_methodPointers[39] =
 	UpdateGPSText_Update_m32085EA3D0F6B37489FEE6E20264E680894CCC3C,
 	UpdateGPSText__ctor_mFB50DBB84EA8794F55B704DE2931E203A82CB290,
 };
-static const int32_t s_InvokerIndices[39] = 
+static const int32_t s_InvokerIndices[45] = 
 {
-	4511,
-	4511,
-	4511,
-	4511,
-	4511,
-	4511,
-	4414,
-	4511,
-	3634,
-	4511,
-	4345,
-	4414,
-	4511,
-	4414,
-	4511,
-	4511,
+	4509,
+	4509,
+	4509,
+	4509,
+	4509,
+	4509,
+	4412,
+	4509,
+	3632,
+	4509,
+	4343,
+	4412,
+	4509,
+	4412,
+	4509,
+	4509,
 	7019,
 	7116,
-	4511,
-	4414,
-	4511,
-	3634,
-	4511,
-	4345,
-	4414,
-	4511,
-	4414,
-	4511,
-	4511,
-	4511,
-	4511,
-	4511,
-	3634,
-	4511,
-	4511,
-	2577,
-	4511,
-	4511,
-	4511,
+	4509,
+	4412,
+	4509,
+	3632,
+	4509,
+	4343,
+	4412,
+	4509,
+	4412,
+	4509,
+	4509,
+	4509,
+	3569,
+	3655,
+	4509,
+	4509,
+	4509,
+	4509,
+	4509,
+	4509,
+	3632,
+	4509,
+	4509,
+	2575,
+	4509,
+	4509,
+	4509,
 };
 IL2CPP_EXTERN_C const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule;
 const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule = 
 {
 	"Assembly-CSharp.dll",
-	39,
+	45,
 	s_methodPointers,
 	0,
 	NULL,
