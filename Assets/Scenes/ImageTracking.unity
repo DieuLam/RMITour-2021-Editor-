@@ -316,7 +316,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   placeablePrefabs:
-  - {fileID: 3712045053334078693, guid: 5e2c78d705fd3ef4999a391665cbfb2a, type: 3}
+  - {fileID: 5917096180825178594, guid: 5e2c78d705fd3ef4999a391665cbfb2a, type: 3}
   - {fileID: 7827496547913525367, guid: aef33558963b9bd4abacba011cdc3cb6, type: 3}
 --- !u!114 &970784291
 MonoBehaviour:
@@ -413,7 +413,7 @@ Camera:
   m_Depth: 0
   m_CullingMask:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 3895
   m_RenderingPath: -1
   m_TargetTexture: {fileID: 0}
   m_TargetDisplay: 0
