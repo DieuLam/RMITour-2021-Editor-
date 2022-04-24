@@ -26,7 +26,7 @@ MonoBehaviour:
     m_Size: {x: 0.1, y: 0.15}
     m_SpecifySize: 1
     m_Name: Chang
-    m_Texture: {fileID: 2800000, guid: 6b9a0b3a84aeb3e47bd76fe56368bf4c, type: 3}
+    m_Texture: {fileID: 0}
   - m_SerializedGuid:
       m_GuidLow: 5252837845756928483
       m_GuidHigh: 16569374263882483097
@@ -36,4 +36,4 @@ MonoBehaviour:
     m_Size: {x: 0.1, y: 0.15}
     m_SpecifySize: 1
     m_Name: Dieu
-    m_Texture: {fileID: 2800000, guid: dd95de90a86484542afbc9c07e4bdbeb, type: 3}
+    m_Texture: {fileID: 0}

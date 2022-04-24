@@ -63,11 +63,11 @@ public class ImageTracking : MonoBehaviour
 
         prefab.SetActive(true);
 
-        foreach(GameObject go in spawnedPrefabs.Values) {
+        // foreach(GameObject go in spawnedPrefabs.Values) {
 
-            if (go.name != name) {
-                go.SetActive(false);
-            }
-        }
+        //     if (go.name != name) {
+        //         go.SetActive(false);
+        //     }
+        // }
     }
 }
