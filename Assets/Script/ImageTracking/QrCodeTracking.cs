@@ -10,6 +10,8 @@ public class QrCodeTracking : MonoBehaviour
 {
     private ARTrackedImageManager trackImageManager;
 
+    public GameObject currentPosition;
+
     private void Awake() 
     {
         trackImageManager = FindObjectOfType<ARTrackedImageManager>();
@@ -27,8 +29,6 @@ public class QrCodeTracking : MonoBehaviour
 
     private void ImageChanged(ARTrackedImagesChangedEventArgs args) {
 
-        foreach (var trackedImage in args.added) {
-            Debug.Log(trackedImage.name);
-        }
+        currentPosition.transform.position = new Vector3(10, 2, 10);
     }
 }
