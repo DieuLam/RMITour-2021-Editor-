@@ -3130,14 +3130,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void QrCodeTracking_OnDisable_m427736B9152FC1
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void QrCodeTracking_ImageChanged_m46F63604D5E0F784B79D00A3CC9BE8606B15AFB6 (QrCodeTracking_t9624E78A507D814A6824F1DD1FBDD1E454F16ABF* __this, ARTrackedImagesChangedEventArgs_tD7718E40EE25D22E9143DA4F556C44980E18BE2F ___args0, const RuntimeMethod* method) 
 {
 	{
-		// currentPosition.transform.position = new Vector3(10, 2, 10);
+		// currentPosition.transform.position = new Vector3(7.56f, 2, 2.25f);
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_0 = __this->___currentPosition_5;
 		NullCheck(L_0);
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_1;
 		L_1 = GameObject_get_transform_m0BC10ADFA1632166AE5544BDF9038A2650C2AE56(L_0, NULL);
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_2;
 		memset((&L_2), 0, sizeof(L_2));
-		Vector3__ctor_m376936E6B999EF1ECBE57D990A386303E2283DE0_inline((&L_2), (10.0f), (2.0f), (10.0f), /*hidden argument*/NULL);
+		Vector3__ctor_m376936E6B999EF1ECBE57D990A386303E2283DE0_inline((&L_2), (7.55999994f), (2.0f), (2.25f), /*hidden argument*/NULL);
 		NullCheck(L_1);
 		Transform_set_position_mA1A817124BB41B685043DED2A9BA48CDF37C4156(L_1, L_2, NULL);
 		// }

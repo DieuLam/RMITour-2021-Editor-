@@ -29,6 +29,6 @@ public class QrCodeTracking : MonoBehaviour
 
     private void ImageChanged(ARTrackedImagesChangedEventArgs args) {
 
-        currentPosition.transform.position = new Vector3(10, 2, 10);
+        currentPosition.transform.position = new Vector3(7.56f, 2, 2.25f);  // move current position
     }
 }
