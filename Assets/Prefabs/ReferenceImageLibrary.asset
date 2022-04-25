@@ -21,19 +21,19 @@ MonoBehaviour:
       m_GuidLow: 5276133519699024848
       m_GuidHigh: 5069478730361645998
     m_SerializedTextureGuid:
-      m_GuidLow: 12962631512143563578
-      m_GuidHigh: 5530253645694621563
-    m_Size: {x: 0.1, y: 0.15}
+      m_GuidLow: 6909918309579073760
+      m_GuidHigh: 14927959634815963881
+    m_Size: {x: 0.1, y: 0.1}
     m_SpecifySize: 1
-    m_Name: Chang
-    m_Texture: {fileID: 2800000, guid: 6b9a0b3a84aeb3e47bd76fe56368bf4c, type: 3}
+    m_Name: 2.4.01
+    m_Texture: {fileID: 2800000, guid: 9d6da8e0f6175fe4e952933632c42acf, type: 3}
   - m_SerializedGuid:
       m_GuidLow: 5252837845756928483
       m_GuidHigh: 16569374263882483097
     m_SerializedTextureGuid:
-      m_GuidLow: 9535431462217965200
-      m_GuidHigh: 16995260626585123626
-    m_Size: {x: 0.1, y: 0.15}
+      m_GuidLow: 16313377479370156803
+      m_GuidHigh: 3670242766324762234
+    m_Size: {x: 0.1, y: 0.1}
     m_SpecifySize: 1
-    m_Name: Dieu
-    m_Texture: {fileID: 2800000, guid: dd95de90a86484542afbc9c07e4bdbeb, type: 3}
+    m_Name: 2.4.02
+    m_Texture: {fileID: 2800000, guid: b0b72b03c262e2647a063ca65952ef32, type: 3}
