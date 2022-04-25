@@ -19,8 +19,13 @@ public class ImageTracking : MonoBehaviour
 
         trackImageManager = FindObjectOfType<ARTrackedImageManager>();
 
-        foreach(GameObject prefab in placeablePrefabs) {
+        foreach(GameObject prefab in placeablePrefabs) 
+        {
             GameObject newPrefab = Instantiate(prefab, Vector3.zero, Quaternion.identity);
+
+            //sets the local scale of an object
+            newPrefab.transform.localScale = new Vector3(0,0,0);
+
             newPrefab.name = prefab.name;
             spawnedPrefabs.Add(prefab.name, newPrefab);
         }  
@@ -61,13 +66,16 @@ public class ImageTracking : MonoBehaviour
 
         prefab.transform.position = position;
 
+        // sets the local scale of an object
+        prefab.transform.localScale = new Vector3(0.01f,0.01f,0.01f);
+        // prefab.transform.eulerAngles = new Vector3(90,180,0);
         prefab.SetActive(true);
 
-        // foreach(GameObject go in spawnedPrefabs.Values) {
-
+        foreach(GameObject go in spawnedPrefabs.Values) {
+            go.transform.rotation = trackedImage.transform.rotation;
         //     if (go.name != name) {
         //         go.SetActive(false);
         //     }
-        // }
+        }
     }
 }
