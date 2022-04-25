@@ -15,9 +15,16 @@ public class CalculatePath : MonoBehaviour
 
     private void Update()
     {
-        Destination = SetNavigationTarget.tempDes;
-        distance = (Destination.transform.position - transform.position).magnitude;
+        if (SetNavigationTarget.tempDes != null)
+        {
+            Destination = SetNavigationTarget.tempDes;
+            distance = (Destination.transform.position - transform.position).magnitude;
+            DistanceText.text = "Distance: " + distance.ToString("F1") + " m";
+        }
+        else
+        {
+            DistanceText.text = "Distance: 0m";
+        }
 
-        DistanceText.text = "Distance: " + distance.ToString("F1") + " m";
     }
 }
