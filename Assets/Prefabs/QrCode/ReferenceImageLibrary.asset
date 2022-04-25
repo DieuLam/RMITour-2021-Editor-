@@ -18,12 +18,12 @@ MonoBehaviour:
     m_Storage: []
   m_Images:
   - m_SerializedGuid:
-      m_GuidLow: 5495218494890620386
-      m_GuidHigh: 10303498504364533405
+      m_GuidLow: 5195769872254943807
+      m_GuidHigh: 9292444087427197833
     m_SerializedTextureGuid:
-      m_GuidLow: 16340242036913382154
-      m_GuidHigh: 11648595169801354011
+      m_GuidLow: 7103307535661262568
+      m_GuidHigh: 2669655852282300264
     m_Size: {x: 0.2, y: 0.2}
     m_SpecifySize: 1
-    m_Name: code
+    m_Name: 2.4.01
     m_Texture: {fileID: 0}
