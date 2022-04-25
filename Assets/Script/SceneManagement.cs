@@ -5,12 +5,16 @@ using UnityEngine.SceneManagement;
 
 public class SceneManagement : MonoBehaviour
 {
-    public void GoToSampleScene()
+    public void ARNavigation()
     {
         SceneManager.LoadScene(1);
     }
-    public void GoToUIScene()
+    public void UI()
     {
         SceneManager.LoadScene(0);
+    }
+    public void ImageTracking()
+    {
+        SceneManager.LoadScene(2);
     }
 }

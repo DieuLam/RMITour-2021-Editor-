@@ -78,31 +78,33 @@ extern void QrCodeTracking_OnDisable_m427736B9152FC1E2195DD0DD548DC2E5DB0F8980 (
 extern void QrCodeTracking_ImageChanged_m46F63604D5E0F784B79D00A3CC9BE8606B15AFB6 (void);
 // 0x00000021 System.Void QrCodeTracking::.ctor()
 extern void QrCodeTracking__ctor_mF07A092B0CFEA70E252B2FE48DB74996C6BB77A0 (void);
-// 0x00000022 System.Void SceneManagement::GoToSampleScene()
-extern void SceneManagement_GoToSampleScene_m1331DD24B077548E584D144D32F4E28EBA8F24ED (void);
-// 0x00000023 System.Void SceneManagement::GoToUIScene()
-extern void SceneManagement_GoToUIScene_mC264C9337E1BD16DCD8562C09363862CBA9CFAB9 (void);
-// 0x00000024 System.Void SceneManagement::.ctor()
+// 0x00000022 System.Void SceneManagement::ARNavigation()
+extern void SceneManagement_ARNavigation_m6A70F02AA67D2431BBBDEAA46CE1AED4FE6DBED7 (void);
+// 0x00000023 System.Void SceneManagement::UI()
+extern void SceneManagement_UI_mF11941864E58F1CFA6770EBBE5C051D8858DFA4E (void);
+// 0x00000024 System.Void SceneManagement::ImageTracking()
+extern void SceneManagement_ImageTracking_m332EAA9882325596BC1434AF8197950EB4B611F0 (void);
+// 0x00000025 System.Void SceneManagement::.ctor()
 extern void SceneManagement__ctor_m4BF527C2FDB7A148441317813DDE923896E275F2 (void);
-// 0x00000025 System.Void SetNavigationTarget::Start()
+// 0x00000026 System.Void SetNavigationTarget::Start()
 extern void SetNavigationTarget_Start_m0CFEEDEE4BC72DD7486B429949C561630DED0FB6 (void);
-// 0x00000026 System.Void SetNavigationTarget::Update()
+// 0x00000027 System.Void SetNavigationTarget::Update()
 extern void SetNavigationTarget_Update_m24DD885D08F1EA5725F6B65E56B8706FBC72EF66 (void);
-// 0x00000027 System.Void SetNavigationTarget::SetCurrentNavigationTarget(System.Int32)
+// 0x00000028 System.Void SetNavigationTarget::SetCurrentNavigationTarget(System.Int32)
 extern void SetNavigationTarget_SetCurrentNavigationTarget_mCF7202CD55D545AB5824302F77079A6E010E0CF5 (void);
-// 0x00000028 System.Void SetNavigationTarget::.ctor()
+// 0x00000029 System.Void SetNavigationTarget::.ctor()
 extern void SetNavigationTarget__ctor_m40AA3B1240C215E094DE629C3BFAD2C4859E6D18 (void);
-// 0x00000029 System.Void SetNavigationTarget/<>c__DisplayClass9_0::.ctor()
+// 0x0000002A System.Void SetNavigationTarget/<>c__DisplayClass9_0::.ctor()
 extern void U3CU3Ec__DisplayClass9_0__ctor_m9F1E5D7818C27A3F6ED404E6AF31C5CF20471846 (void);
-// 0x0000002A System.Boolean SetNavigationTarget/<>c__DisplayClass9_0::<SetCurrentNavigationTarget>b__0(Target)
+// 0x0000002B System.Boolean SetNavigationTarget/<>c__DisplayClass9_0::<SetCurrentNavigationTarget>b__0(Target)
 extern void U3CU3Ec__DisplayClass9_0_U3CSetCurrentNavigationTargetU3Eb__0_m3B34ADDD4983D13AAF1ECDAA5929E8E6038BB56F (void);
-// 0x0000002B System.Void Target::.ctor()
+// 0x0000002C System.Void Target::.ctor()
 extern void Target__ctor_m5524C5EEF36FA6DB1E6B5BFA323B37E68635C216 (void);
-// 0x0000002C System.Void UpdateGPSText::Update()
+// 0x0000002D System.Void UpdateGPSText::Update()
 extern void UpdateGPSText_Update_m32085EA3D0F6B37489FEE6E20264E680894CCC3C (void);
-// 0x0000002D System.Void UpdateGPSText::.ctor()
+// 0x0000002E System.Void UpdateGPSText::.ctor()
 extern void UpdateGPSText__ctor_mFB50DBB84EA8794F55B704DE2931E203A82CB290 (void);
-static Il2CppMethodPointer s_methodPointers[45] = 
+static Il2CppMethodPointer s_methodPointers[46] = 
 {
 	CalculatePath_Update_mA5C6CA8195B391B247F258E0AC3DAF426EB81D42,
 	CalculatePath__ctor_mA6150866C6AFF01EDA7E405D6508B75B898FF038,
@@ -137,8 +139,9 @@ static Il2CppMethodPointer s_methodPointers[45] =
 	QrCodeTracking_OnDisable_m427736B9152FC1E2195DD0DD548DC2E5DB0F8980,
 	QrCodeTracking_ImageChanged_m46F63604D5E0F784B79D00A3CC9BE8606B15AFB6,
 	QrCodeTracking__ctor_mF07A092B0CFEA70E252B2FE48DB74996C6BB77A0,
-	SceneManagement_GoToSampleScene_m1331DD24B077548E584D144D32F4E28EBA8F24ED,
-	SceneManagement_GoToUIScene_mC264C9337E1BD16DCD8562C09363862CBA9CFAB9,
+	SceneManagement_ARNavigation_m6A70F02AA67D2431BBBDEAA46CE1AED4FE6DBED7,
+	SceneManagement_UI_mF11941864E58F1CFA6770EBBE5C051D8858DFA4E,
+	SceneManagement_ImageTracking_m332EAA9882325596BC1434AF8197950EB4B611F0,
 	SceneManagement__ctor_m4BF527C2FDB7A148441317813DDE923896E275F2,
 	SetNavigationTarget_Start_m0CFEEDEE4BC72DD7486B429949C561630DED0FB6,
 	SetNavigationTarget_Update_m24DD885D08F1EA5725F6B65E56B8706FBC72EF66,
@@ -150,7 +153,7 @@ static Il2CppMethodPointer s_methodPointers[45] =
 	UpdateGPSText_Update_m32085EA3D0F6B37489FEE6E20264E680894CCC3C,
 	UpdateGPSText__ctor_mFB50DBB84EA8794F55B704DE2931E203A82CB290,
 };
-static const int32_t s_InvokerIndices[45] = 
+static const int32_t s_InvokerIndices[46] = 
 {
 	4422,
 	4422,
@@ -190,6 +193,7 @@ static const int32_t s_InvokerIndices[45] =
 	4422,
 	4422,
 	4422,
+	4422,
 	3553,
 	4422,
 	4422,
@@ -202,7 +206,7 @@ IL2CPP_EXTERN_C const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule;
 const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule = 
 {
 	"Assembly-CSharp.dll",
-	45,
+	46,
 	s_methodPointers,
 	0,
 	NULL,
