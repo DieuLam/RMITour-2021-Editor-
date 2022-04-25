@@ -68,14 +68,14 @@ public class ImageTracking : MonoBehaviour
 
         // sets the local scale of an object
         prefab.transform.localScale = new Vector3(0.01f,0.01f,0.01f);
-        // prefab.transform.eulerAngles = new Vector3(90,180,0);
+        prefab.transform.rotation = trackedImage.transform.rotation;
         prefab.SetActive(true);
 
-        foreach(GameObject go in spawnedPrefabs.Values) {
-            go.transform.rotation = trackedImage.transform.rotation;
+        // foreach(GameObject go in spawnedPrefabs.Values) {
+        //     go.transform.rotation = trackedImage.transform.rotation;
         //     if (go.name != name) {
         //         go.SetActive(false);
         //     }
-        }
+        // }
     }
 }
