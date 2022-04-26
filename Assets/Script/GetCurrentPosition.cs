@@ -28,7 +28,7 @@ public class GetCurrentPosition : MonoBehaviour
         float x = ((lon - 106.69600f) * 100000) - 25 - 13;  // longitude
         float y = 2;  // height of current location
 
-        transform.position = new Vector3(x, y, z);  // move the current location in Unity
+        transform.position = new Vector3(-0.7f, y, 0);  // move the current location in Unity
 
     }
 }
