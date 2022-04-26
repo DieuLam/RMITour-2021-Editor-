@@ -17,4 +17,8 @@ public class SceneManagement : MonoBehaviour
     {
         SceneManager.LoadScene(2);
     }
+    public void view360()
+    {
+        SceneManager.LoadScene(3);
+    }
 }
