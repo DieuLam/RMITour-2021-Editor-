@@ -114,17 +114,41 @@ extern void QrCodeRecenter__ctor_mA089181E2E59AC0F2538D1DF51D403784D4D5EDD (void
 extern void U3CU3Ec__DisplayClass11_0__ctor_mC586E113C3D1D4E6CB309DB3B22505355C66BFA2 (void);
 // 0x00000033 System.Boolean QrCodeRecenter/<>c__DisplayClass11_0::<Recenter>b__0(Target)
 extern void U3CU3Ec__DisplayClass11_0_U3CRecenterU3Eb__0_m78A4CB6F269EB79B5A7F0B9E6A6DBD0C6C224B3D (void);
-// 0x00000034 System.Void SceneManagement::ARNavigation()
+// 0x00000034 System.Void ScanRoom::OnEnable()
+extern void ScanRoom_OnEnable_m8FD81461A1EA761073CB7831266D681C71C9760C (void);
+// 0x00000035 System.Void ScanRoom::OnDisable()
+extern void ScanRoom_OnDisable_m793760818AB09ACF5EEF65B5139DDD04617F2FC8 (void);
+// 0x00000036 System.Void ScanRoom::OnCameraFrameReceived(UnityEngine.XR.ARFoundation.ARCameraFrameEventArgs)
+extern void ScanRoom_OnCameraFrameReceived_m591FC6E82B7F397B1A939E32C8978F09C7FD971E (void);
+// 0x00000037 System.Void ScanRoom::covertRoomNumber(System.String)
+extern void ScanRoom_covertRoomNumber_m8C2EC297D34452CB0884DAF6877A50EEF135A220 (void);
+// 0x00000038 System.Void ScanRoom::doSomething(System.String)
+extern void ScanRoom_doSomething_mEF21FE23EF16D2D3CF7B9004E78CB3A3A8049B90 (void);
+// 0x00000039 System.Void ScanRoom::.ctor()
+extern void ScanRoom__ctor_m74467E7E33FB8DC6A02DA3113065E526AC64E57A (void);
+// 0x0000003A System.Void ScanRoom/<>c__DisplayClass8_0::.ctor()
+extern void U3CU3Ec__DisplayClass8_0__ctor_m7A8AC82D3EABA722C1C11F7DF5358A25B9A4DE18 (void);
+// 0x0000003B System.Boolean ScanRoom/<>c__DisplayClass8_0::<doSomething>b__0(Target)
+extern void U3CU3Ec__DisplayClass8_0_U3CdoSomethingU3Eb__0_m44EF2F2D964CB2C980898FB5773536F670B239E0 (void);
+// 0x0000003C System.Void SceneManagement::ARNavigation()
 extern void SceneManagement_ARNavigation_m6A70F02AA67D2431BBBDEAA46CE1AED4FE6DBED7 (void);
-// 0x00000035 System.Void SceneManagement::UI()
+// 0x0000003D System.Void SceneManagement::UI()
 extern void SceneManagement_UI_mF11941864E58F1CFA6770EBBE5C051D8858DFA4E (void);
-// 0x00000036 System.Void SceneManagement::ImageTracking()
+// 0x0000003E System.Void SceneManagement::ImageTracking()
 extern void SceneManagement_ImageTracking_m332EAA9882325596BC1434AF8197950EB4B611F0 (void);
-// 0x00000037 System.Void SceneManagement::view360()
+// 0x0000003F System.Void SceneManagement::view360()
 extern void SceneManagement_view360_mDF78AFE643058BF01B74BCF18D11FAC1804415E3 (void);
-// 0x00000038 System.Void SceneManagement::.ctor()
+// 0x00000040 System.Void SceneManagement::.ctor()
 extern void SceneManagement__ctor_m4BF527C2FDB7A148441317813DDE923896E275F2 (void);
-static Il2CppMethodPointer s_methodPointers[56] = 
+// 0x00000041 System.Void VRCamera::Start()
+extern void VRCamera_Start_m953F6CE608CCB5636DC37EB3930A3A2F0A423C54 (void);
+// 0x00000042 System.Void VRCamera::Update()
+extern void VRCamera_Update_m601AEF9C261F9720E6100732F5208E6F90D6859C (void);
+// 0x00000043 System.Void VRCamera::LateUpdate()
+extern void VRCamera_LateUpdate_mCA56C59360F535D8908FBA353340EE90FA78D105 (void);
+// 0x00000044 System.Void VRCamera::.ctor()
+extern void VRCamera__ctor_mD54E0E92F4F19415ECA45FFDB340ECFD6B462596 (void);
+static Il2CppMethodPointer s_methodPointers[68] = 
 {
 	CalculatePath_Update_mA5C6CA8195B391B247F258E0AC3DAF426EB81D42,
 	CalculatePath__ctor_mA6150866C6AFF01EDA7E405D6508B75B898FF038,
@@ -177,13 +201,25 @@ static Il2CppMethodPointer s_methodPointers[56] =
 	QrCodeRecenter__ctor_mA089181E2E59AC0F2538D1DF51D403784D4D5EDD,
 	U3CU3Ec__DisplayClass11_0__ctor_mC586E113C3D1D4E6CB309DB3B22505355C66BFA2,
 	U3CU3Ec__DisplayClass11_0_U3CRecenterU3Eb__0_m78A4CB6F269EB79B5A7F0B9E6A6DBD0C6C224B3D,
+	ScanRoom_OnEnable_m8FD81461A1EA761073CB7831266D681C71C9760C,
+	ScanRoom_OnDisable_m793760818AB09ACF5EEF65B5139DDD04617F2FC8,
+	ScanRoom_OnCameraFrameReceived_m591FC6E82B7F397B1A939E32C8978F09C7FD971E,
+	ScanRoom_covertRoomNumber_m8C2EC297D34452CB0884DAF6877A50EEF135A220,
+	ScanRoom_doSomething_mEF21FE23EF16D2D3CF7B9004E78CB3A3A8049B90,
+	ScanRoom__ctor_m74467E7E33FB8DC6A02DA3113065E526AC64E57A,
+	U3CU3Ec__DisplayClass8_0__ctor_m7A8AC82D3EABA722C1C11F7DF5358A25B9A4DE18,
+	U3CU3Ec__DisplayClass8_0_U3CdoSomethingU3Eb__0_m44EF2F2D964CB2C980898FB5773536F670B239E0,
 	SceneManagement_ARNavigation_m6A70F02AA67D2431BBBDEAA46CE1AED4FE6DBED7,
 	SceneManagement_UI_mF11941864E58F1CFA6770EBBE5C051D8858DFA4E,
 	SceneManagement_ImageTracking_m332EAA9882325596BC1434AF8197950EB4B611F0,
 	SceneManagement_view360_mDF78AFE643058BF01B74BCF18D11FAC1804415E3,
 	SceneManagement__ctor_m4BF527C2FDB7A148441317813DDE923896E275F2,
+	VRCamera_Start_m953F6CE608CCB5636DC37EB3930A3A2F0A423C54,
+	VRCamera_Update_m601AEF9C261F9720E6100732F5208E6F90D6859C,
+	VRCamera_LateUpdate_mCA56C59360F535D8908FBA353340EE90FA78D105,
+	VRCamera__ctor_mD54E0E92F4F19415ECA45FFDB340ECFD6B462596,
 };
-static const int32_t s_InvokerIndices[56] = 
+static const int32_t s_InvokerIndices[68] = 
 {
 	4512,
 	4512,
@@ -238,6 +274,18 @@ static const int32_t s_InvokerIndices[56] =
 	2578,
 	4512,
 	4512,
+	3550,
+	3658,
+	3658,
+	4512,
+	4512,
+	2578,
+	4512,
+	4512,
+	4512,
+	4512,
+	4512,
+	4512,
 	4512,
 	4512,
 	4512,
@@ -246,7 +294,7 @@ IL2CPP_EXTERN_C const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule;
 const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule = 
 {
 	"Assembly-CSharp.dll",
-	56,
+	68,
 	s_methodPointers,
 	0,
 	NULL,
