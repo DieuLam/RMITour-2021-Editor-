@@ -103,7 +103,8 @@ public class ScanRoom : MonoBehaviour
  
         if (currentTarget != null) {  // valid result
 
-           // do something...
+           currentTarget.PositionObject.transform.localScale = new Vector3(0.01f,0.01f,0.01f);
+           currentTarget.PositionObject.transform.position = Camera.main.ScreenToWorldPoint(new Vector3(0, 0, 5));
 
         }
     }
