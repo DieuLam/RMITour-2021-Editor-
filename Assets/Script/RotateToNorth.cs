@@ -14,7 +14,7 @@ public class RotateToNorth : MonoBehaviour
         cameraheight = transform.position.y;
     }
 
-    private void Update()
+    private void LateUpdate()
     {
         Vector3 targetPosition = settings.targetToFollow.transform.position;
 
