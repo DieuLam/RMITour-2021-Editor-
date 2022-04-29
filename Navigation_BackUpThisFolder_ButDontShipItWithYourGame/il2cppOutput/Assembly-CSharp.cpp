@@ -5079,6 +5079,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ScanRoom_covertRoomNumber_m8C2EC297D3445
 		s_Il2CppMethodInitialized = true;
 	}
 	StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* V_0 = NULL;
+	String_t* V_1 = NULL;
 	{
 		// var result = targetText.Split("0");  // split the link
 		String_t* L_0 = ___targetText0;
@@ -5122,8 +5123,9 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ScanRoom_covertRoomNumber_m8C2EC297D3445
 		(L_13)->SetAt(static_cast<il2cpp_array_size_t>(4), (String_t*)L_16);
 		String_t* L_17;
 		L_17 = String_Concat_m6B0734B65813C8EA093D78E5C2D16534EB6FE8C0(L_13, NULL);
-		// doSomething(targetText);
-		String_t* L_18 = ___targetText0;
+		V_1 = L_17;
+		// doSomething(room);
+		String_t* L_18 = V_1;
 		ScanRoom_doSomething_mEF21FE23EF16D2D3CF7B9004E78CB3A3A8049B90(__this, L_18, NULL);
 		// }
 		return;
@@ -5239,23 +5241,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool U3CU3Ec__DisplayClass8_0_U3CdoSomethingU
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// System.Void SceneManagement::ARNavigation()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SceneManagement_ARNavigation_m6A70F02AA67D2431BBBDEAA46CE1AED4FE6DBED7 (SceneManagement_t0728113317AD7ED6723836F3020BDBC4638C4280* __this, const RuntimeMethod* method) 
-{
-	static bool s_Il2CppMethodInitialized;
-	if (!s_Il2CppMethodInitialized)
-	{
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&SceneManager_tA0EF56A88ACA4A15731AF7FDC10A869FA4C698FA_il2cpp_TypeInfo_var);
-		s_Il2CppMethodInitialized = true;
-	}
-	{
-		// SceneManager.LoadScene(1);
-		il2cpp_codegen_runtime_class_init_inline(SceneManager_tA0EF56A88ACA4A15731AF7FDC10A869FA4C698FA_il2cpp_TypeInfo_var);
-		SceneManager_LoadScene_mE00D17D79AD74B307F913BBF296A36115548DB6D(1, NULL);
-		// }
-		return;
-	}
-}
 // System.Void SceneManagement::UI()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SceneManagement_UI_mF11941864E58F1CFA6770EBBE5C051D8858DFA4E (SceneManagement_t0728113317AD7ED6723836F3020BDBC4638C4280* __this, const RuntimeMethod* method) 
 {
@@ -5269,6 +5254,23 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SceneManagement_UI_mF11941864E58F1CFA677
 		// SceneManager.LoadScene(0);
 		il2cpp_codegen_runtime_class_init_inline(SceneManager_tA0EF56A88ACA4A15731AF7FDC10A869FA4C698FA_il2cpp_TypeInfo_var);
 		SceneManager_LoadScene_mE00D17D79AD74B307F913BBF296A36115548DB6D(0, NULL);
+		// }
+		return;
+	}
+}
+// System.Void SceneManagement::ARNavigation()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SceneManagement_ARNavigation_m6A70F02AA67D2431BBBDEAA46CE1AED4FE6DBED7 (SceneManagement_t0728113317AD7ED6723836F3020BDBC4638C4280* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&SceneManager_tA0EF56A88ACA4A15731AF7FDC10A869FA4C698FA_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// SceneManager.LoadScene(1);
+		il2cpp_codegen_runtime_class_init_inline(SceneManager_tA0EF56A88ACA4A15731AF7FDC10A869FA4C698FA_il2cpp_TypeInfo_var);
+		SceneManager_LoadScene_mE00D17D79AD74B307F913BBF296A36115548DB6D(1, NULL);
 		// }
 		return;
 	}

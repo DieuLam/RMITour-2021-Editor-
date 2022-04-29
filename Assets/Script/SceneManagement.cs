@@ -5,13 +5,13 @@ using UnityEngine.SceneManagement;
 
 public class SceneManagement : MonoBehaviour
 {
-    public void ARNavigation()
-    {
-        SceneManager.LoadScene(1);
-    }
     public void UI()
     {
         SceneManager.LoadScene(0);
+    }
+    public void ARNavigation()
+    {
+        SceneManager.LoadScene(1);
     }
     public void ImageTracking()
     {

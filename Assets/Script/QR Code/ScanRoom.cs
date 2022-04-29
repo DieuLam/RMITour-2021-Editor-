@@ -1,5 +1,6 @@
 using UnityEngine.XR.ARFoundation;
 using UnityEngine.XR.ARSubsystems;
+// using UnityEngine.SceneManagement;
 using System.Collections.Generic;
 using Unity.Collections;
 using UnityEngine.UI;
@@ -17,6 +18,9 @@ public class ScanRoom : MonoBehaviour
     private Texture2D texture;
 
     private IBarcodeReader reader = new BarcodeReader();
+    
+    [SerializeField]
+    private Image roomInfo;
 
     private void OnEnable() {
         cameraManager.frameReceived += OnCameraFrameReceived;
@@ -91,7 +95,7 @@ public class ScanRoom : MonoBehaviour
 
         var result = targetText.Split("0");  // split the link
         var room = result[1] + "." + result[2] + ".0" + result[4]; // -> 2.4.01
-        doSomething(targetText);
+        doSomething(room);
     }
 
     // ------------------------ Do Something --------------------------
@@ -103,8 +107,8 @@ public class ScanRoom : MonoBehaviour
  
         if (currentTarget != null) {  // valid result
 
-           currentTarget.PositionObject.transform.localScale = new Vector3(0.01f,0.01f,0.01f);
-           currentTarget.PositionObject.transform.position = Camera.main.ScreenToWorldPoint(new Vector3(0, 0, 5));
+           // Change scene
+           // SceneManager.LoadScene(targetText);
 
         }
     }

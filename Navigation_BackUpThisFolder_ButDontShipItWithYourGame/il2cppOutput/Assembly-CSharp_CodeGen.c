@@ -130,10 +130,10 @@ extern void ScanRoom__ctor_m74467E7E33FB8DC6A02DA3113065E526AC64E57A (void);
 extern void U3CU3Ec__DisplayClass8_0__ctor_m7A8AC82D3EABA722C1C11F7DF5358A25B9A4DE18 (void);
 // 0x0000003B System.Boolean ScanRoom/<>c__DisplayClass8_0::<doSomething>b__0(Target)
 extern void U3CU3Ec__DisplayClass8_0_U3CdoSomethingU3Eb__0_m44EF2F2D964CB2C980898FB5773536F670B239E0 (void);
-// 0x0000003C System.Void SceneManagement::ARNavigation()
-extern void SceneManagement_ARNavigation_m6A70F02AA67D2431BBBDEAA46CE1AED4FE6DBED7 (void);
-// 0x0000003D System.Void SceneManagement::UI()
+// 0x0000003C System.Void SceneManagement::UI()
 extern void SceneManagement_UI_mF11941864E58F1CFA6770EBBE5C051D8858DFA4E (void);
+// 0x0000003D System.Void SceneManagement::ARNavigation()
+extern void SceneManagement_ARNavigation_m6A70F02AA67D2431BBBDEAA46CE1AED4FE6DBED7 (void);
 // 0x0000003E System.Void SceneManagement::ImageTracking()
 extern void SceneManagement_ImageTracking_m332EAA9882325596BC1434AF8197950EB4B611F0 (void);
 // 0x0000003F System.Void SceneManagement::view360()
@@ -209,8 +209,8 @@ static Il2CppMethodPointer s_methodPointers[68] =
 	ScanRoom__ctor_m74467E7E33FB8DC6A02DA3113065E526AC64E57A,
 	U3CU3Ec__DisplayClass8_0__ctor_m7A8AC82D3EABA722C1C11F7DF5358A25B9A4DE18,
 	U3CU3Ec__DisplayClass8_0_U3CdoSomethingU3Eb__0_m44EF2F2D964CB2C980898FB5773536F670B239E0,
-	SceneManagement_ARNavigation_m6A70F02AA67D2431BBBDEAA46CE1AED4FE6DBED7,
 	SceneManagement_UI_mF11941864E58F1CFA6770EBBE5C051D8858DFA4E,
+	SceneManagement_ARNavigation_m6A70F02AA67D2431BBBDEAA46CE1AED4FE6DBED7,
 	SceneManagement_ImageTracking_m332EAA9882325596BC1434AF8197950EB4B611F0,
 	SceneManagement_view360_mDF78AFE643058BF01B74BCF18D11FAC1804415E3,
 	SceneManagement__ctor_m4BF527C2FDB7A148441317813DDE923896E275F2,
