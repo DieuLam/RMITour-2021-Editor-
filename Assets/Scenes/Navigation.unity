@@ -334,6 +334,7 @@ GameObject:
   - component: {fileID: 65284396}
   - component: {fileID: 65284394}
   - component: {fileID: 65284395}
+  - component: {fileID: 65284397}
   m_Layer: 0
   m_Name: TopDownCamera
   m_TagString: MainCamera
@@ -407,6 +408,20 @@ Transform:
   m_Father: {fileID: 40919618}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
+--- !u!114 &65284397
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 65284393}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 31f4ba4f5b447774eb367dd19faacf50, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  settings: {fileID: 0}
+  cameraheight: 0
 --- !u!1 &82831392
 GameObject:
   m_ObjectHideFlags: 0
@@ -3297,6 +3312,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 757726112}
+  - component: {fileID: 757726113}
   m_Layer: 0
   m_Name: Mini Map
   m_TagString: Untagged
@@ -3325,6 +3341,20 @@ RectTransform:
   m_AnchoredPosition: {x: 300, y: 350}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &757726113
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 757726111}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c2d6ceb78c30ccc468c37e3efd40b6e2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  targetToFollow: {fileID: 1270945798}
+  rotateWithTheTarget: 1
 --- !u!1 &780342171
 GameObject:
   m_ObjectHideFlags: 0
