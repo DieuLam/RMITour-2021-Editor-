@@ -51,8 +51,8 @@ public class VRCamera : MonoBehaviour
             float endMouseY = Input.mousePosition.y;
 
             //Difference (in screen coordinates)
-            float diffX = endMouseX - startMouseX;
-            float diffY = endMouseY - startMouseY;
+            float diffX = (endMouseX - startMouseX) * -1;
+            float diffY = (endMouseY - startMouseY) * -1;
 
             //New center of the screen
             float newCenterX = Screen.width / 2 + diffX;

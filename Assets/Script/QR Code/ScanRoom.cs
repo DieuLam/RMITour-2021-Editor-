@@ -1,6 +1,6 @@
 using UnityEngine.XR.ARFoundation;
 using UnityEngine.XR.ARSubsystems;
-// using UnityEngine.SceneManagement;
+using UnityEngine.SceneManagement;
 using System.Collections.Generic;
 using Unity.Collections;
 using UnityEngine.UI;
@@ -12,15 +12,9 @@ public class ScanRoom : MonoBehaviour
     [SerializeField]
     private ARCameraManager cameraManager;
 
-    [SerializeField]
-    private List<Target> target = new List<Target>();
-
     private Texture2D texture;
 
     private IBarcodeReader reader = new BarcodeReader();
-    
-    [SerializeField]
-    private Image roomInfo;
 
     private void OnEnable() {
         cameraManager.frameReceived += OnCameraFrameReceived;
@@ -95,21 +89,8 @@ public class ScanRoom : MonoBehaviour
 
         var result = targetText.Split("0");  // split the link
         var room = result[1] + "." + result[2] + ".0" + result[4]; // -> 2.4.01
-        doSomething(room);
-    }
-
-    // ------------------------ Do Something --------------------------
-
-    private void doSomething(string targetText) {
-
-        // compare QrCode name with object name
-        Target currentTarget = target.Find(x => x.Name.ToLower().Equals(targetText.ToLower()));
- 
-        if (currentTarget != null) {  // valid result
-
-           // Change scene
-           // SceneManager.LoadScene(targetText);
-
-        }
+        
+        // Change scene
+        SceneManager.LoadScene(room);
     }
 }
