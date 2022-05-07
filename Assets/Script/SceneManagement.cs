@@ -21,4 +21,13 @@ public class SceneManagement : MonoBehaviour
     {
         SceneManager.LoadScene(3);
     }
+    public void roomview(){
+        SceneManager.LoadScene(7);
+    }
+    public void officeview(){
+        SceneManager.LoadScene(8);
+    }
+    public void maclabview(){
+        SceneManager.LoadScene(9);
+    }
 }
