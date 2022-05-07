@@ -21,7 +21,7 @@ public class QrCodeRecenter : MonoBehaviour
     private List<Target> target = new List<Target>();
 
     [SerializeField]
-    private Text QrCodeName;
+    private Text route;
 
     private Texture2D texture;
     private IBarcodeReader reader = new BarcodeReader();
@@ -99,7 +99,11 @@ public class QrCodeRecenter : MonoBehaviour
 
         var result = targetText.Split("0");
         var room = result[1] + "." + result[2] + ".0" + result[4];
-        QrCodeName.text = room; 
+
+        // Display route info
+        route.text = "start: " + room; 
+
+        // Recenter user
         Recenter(room);
     }
 
@@ -113,7 +117,7 @@ public class QrCodeRecenter : MonoBehaviour
         if (currentTarget != null) {
 
             // reset position and rotation of ARSession
-            // session.Reset();
+            session.Reset();
 
             // Add offset for recentering
             sessionOrigin.transform.position = currentTarget.PositionObject.transform.position;
