@@ -80,77 +80,71 @@ extern void U3CStartLocationServiceU3Ed__7_System_Collections_Generic_IEnumerato
 extern void U3CStartLocationServiceU3Ed__7_System_Collections_IEnumerator_Reset_m776403A93518C26C72B196691A927C8E7D03D511 (void);
 // 0x00000022 System.Object GPS/<StartLocationService>d__7::System.Collections.IEnumerator.get_Current()
 extern void U3CStartLocationServiceU3Ed__7_System_Collections_IEnumerator_get_Current_m94BAF98065BE277CD64F22A8378A8CA26DF686A4 (void);
-// 0x00000023 System.Void ImageTracking::Awake()
-extern void ImageTracking_Awake_m45163218D2F5CE540465973D9A41DCBC31050A45 (void);
-// 0x00000024 System.Void ImageTracking::OnEnable()
-extern void ImageTracking_OnEnable_m6DEDEE1663EC7AA2AB1000CF58776EC231A744B7 (void);
-// 0x00000025 System.Void ImageTracking::OnDisable()
-extern void ImageTracking_OnDisable_m62F1D5572FB9F965AE9E9D881D14D2747FFEE797 (void);
-// 0x00000026 System.Void ImageTracking::ImageChanged(UnityEngine.XR.ARFoundation.ARTrackedImagesChangedEventArgs)
-extern void ImageTracking_ImageChanged_mDA00F95F698FB3F71F4229530251E403861B9B76 (void);
-// 0x00000027 System.Void ImageTracking::UpdateImage(UnityEngine.XR.ARFoundation.ARTrackedImage)
-extern void ImageTracking_UpdateImage_m34C65707C9429E72DDE79B5A2800710CF5750904 (void);
-// 0x00000028 System.Void ImageTracking::.ctor()
-extern void ImageTracking__ctor_m88C12006AC3BAED3DAA4F0E0544DAA5294D96A5A (void);
-// 0x00000029 System.Void Followcam::Start()
+// 0x00000023 System.Void Followcam::Start()
 extern void Followcam_Start_m21833A09EABF9831CFBFD353340BAC2E0851C76D (void);
-// 0x0000002A System.Void Followcam::Update()
+// 0x00000024 System.Void Followcam::Update()
 extern void Followcam_Update_m5CF9FB6277D3A3AC3B63057BB233E21CDE199132 (void);
-// 0x0000002B System.Void Followcam::.ctor()
+// 0x00000025 System.Void Followcam::.ctor()
 extern void Followcam__ctor_m0E0070096C115486FD2D0327B5AF3CD8088741E0 (void);
-// 0x0000002C System.Void MinimapSettings::.ctor()
+// 0x00000026 System.Void MinimapSettings::.ctor()
 extern void MinimapSettings__ctor_m68A8F62A70DD63B875731A85BA196F2D277AB7B5 (void);
-// 0x0000002D System.Void RotateToNorth::Awake()
+// 0x00000027 System.Void RotateToNorth::Awake()
 extern void RotateToNorth_Awake_m691F5DE47D9A82654D17B4BAD8350FF55B737E17 (void);
-// 0x0000002E System.Void RotateToNorth::LateUpdate()
+// 0x00000028 System.Void RotateToNorth::LateUpdate()
 extern void RotateToNorth_LateUpdate_mC55468C99ED333B706B3FD8D4BDFE032E4EAFEEE (void);
-// 0x0000002F System.Void RotateToNorth::.ctor()
+// 0x00000029 System.Void RotateToNorth::.ctor()
 extern void RotateToNorth__ctor_mD78628A67D90B5AF0A2C3BADF7145E4C6C014D6E (void);
-// 0x00000030 System.Void QrCodeRecenter::OnEnable()
+// 0x0000002A System.Void QrCodeRecenter::OnEnable()
 extern void QrCodeRecenter_OnEnable_mD1D7D5F40B155C306E1818A862E4CCD33A54A51F (void);
-// 0x00000031 System.Void QrCodeRecenter::OnDisable()
+// 0x0000002B System.Void QrCodeRecenter::OnDisable()
 extern void QrCodeRecenter_OnDisable_m13A17AC01263D9EE1E2DC0B2CAEA646DFE939BC8 (void);
-// 0x00000032 System.Void QrCodeRecenter::OnCameraFrameReceived(UnityEngine.XR.ARFoundation.ARCameraFrameEventArgs)
+// 0x0000002C System.Void QrCodeRecenter::OnCameraFrameReceived(UnityEngine.XR.ARFoundation.ARCameraFrameEventArgs)
 extern void QrCodeRecenter_OnCameraFrameReceived_m237F79EBAE06CE0FD717BD86C189C5EF4B210A99 (void);
-// 0x00000033 System.Void QrCodeRecenter::covertRoomNumber(System.String)
+// 0x0000002D System.Void QrCodeRecenter::covertRoomNumber(System.String)
 extern void QrCodeRecenter_covertRoomNumber_m84EE316B8606A1C06320EEEEA4786B93735CAF71 (void);
-// 0x00000034 System.Void QrCodeRecenter::Recenter(System.String)
+// 0x0000002E System.Void QrCodeRecenter::Recenter(System.String)
 extern void QrCodeRecenter_Recenter_m49992AFA7DD0F020A958E8F5295BC74D72498C19 (void);
-// 0x00000035 System.Void QrCodeRecenter::.ctor()
+// 0x0000002F System.Void QrCodeRecenter::.ctor()
 extern void QrCodeRecenter__ctor_mA089181E2E59AC0F2538D1DF51D403784D4D5EDD (void);
-// 0x00000036 System.Void QrCodeRecenter/<>c__DisplayClass11_0::.ctor()
+// 0x00000030 System.Void QrCodeRecenter/<>c__DisplayClass11_0::.ctor()
 extern void U3CU3Ec__DisplayClass11_0__ctor_mC586E113C3D1D4E6CB309DB3B22505355C66BFA2 (void);
-// 0x00000037 System.Boolean QrCodeRecenter/<>c__DisplayClass11_0::<Recenter>b__0(Target)
+// 0x00000031 System.Boolean QrCodeRecenter/<>c__DisplayClass11_0::<Recenter>b__0(Target)
 extern void U3CU3Ec__DisplayClass11_0_U3CRecenterU3Eb__0_m78A4CB6F269EB79B5A7F0B9E6A6DBD0C6C224B3D (void);
-// 0x00000038 System.Void ScanRoom::OnEnable()
+// 0x00000032 System.Void ScanRoom::OnEnable()
 extern void ScanRoom_OnEnable_m8FD81461A1EA761073CB7831266D681C71C9760C (void);
-// 0x00000039 System.Void ScanRoom::OnDisable()
+// 0x00000033 System.Void ScanRoom::OnDisable()
 extern void ScanRoom_OnDisable_m793760818AB09ACF5EEF65B5139DDD04617F2FC8 (void);
-// 0x0000003A System.Void ScanRoom::OnCameraFrameReceived(UnityEngine.XR.ARFoundation.ARCameraFrameEventArgs)
+// 0x00000034 System.Void ScanRoom::OnCameraFrameReceived(UnityEngine.XR.ARFoundation.ARCameraFrameEventArgs)
 extern void ScanRoom_OnCameraFrameReceived_m591FC6E82B7F397B1A939E32C8978F09C7FD971E (void);
-// 0x0000003B System.Void ScanRoom::covertRoomNumber(System.String)
+// 0x00000035 System.Void ScanRoom::covertRoomNumber(System.String)
 extern void ScanRoom_covertRoomNumber_m8C2EC297D34452CB0884DAF6877A50EEF135A220 (void);
-// 0x0000003C System.Void ScanRoom::.ctor()
+// 0x00000036 System.Void ScanRoom::.ctor()
 extern void ScanRoom__ctor_m74467E7E33FB8DC6A02DA3113065E526AC64E57A (void);
-// 0x0000003D System.Void SceneManagement::UI()
+// 0x00000037 System.Void SceneManagement::UI()
 extern void SceneManagement_UI_mF11941864E58F1CFA6770EBBE5C051D8858DFA4E (void);
-// 0x0000003E System.Void SceneManagement::ARNavigation()
+// 0x00000038 System.Void SceneManagement::ARNavigation()
 extern void SceneManagement_ARNavigation_m6A70F02AA67D2431BBBDEAA46CE1AED4FE6DBED7 (void);
-// 0x0000003F System.Void SceneManagement::ScanRoom()
+// 0x00000039 System.Void SceneManagement::ScanRoom()
 extern void SceneManagement_ScanRoom_mCE93A704F4EA9505E0660AF7B99164FAD5D1CBAC (void);
-// 0x00000040 System.Void SceneManagement::view360()
+// 0x0000003A System.Void SceneManagement::view360()
 extern void SceneManagement_view360_mDF78AFE643058BF01B74BCF18D11FAC1804415E3 (void);
-// 0x00000041 System.Void SceneManagement::.ctor()
+// 0x0000003B System.Void SceneManagement::roomview()
+extern void SceneManagement_roomview_m2D7B5EB44DFBC8690C873B64AF59303DCA6751DD (void);
+// 0x0000003C System.Void SceneManagement::officeview()
+extern void SceneManagement_officeview_m59A3CDF0D9ED8EDBA2E0BEC75F610848BE90B6F6 (void);
+// 0x0000003D System.Void SceneManagement::maclabview()
+extern void SceneManagement_maclabview_mE518D6E76BD9EC2E0E1C9B768E1DF8AB6827898F (void);
+// 0x0000003E System.Void SceneManagement::.ctor()
 extern void SceneManagement__ctor_m4BF527C2FDB7A148441317813DDE923896E275F2 (void);
-// 0x00000042 System.Void VRCamera::Start()
+// 0x0000003F System.Void VRCamera::Start()
 extern void VRCamera_Start_m953F6CE608CCB5636DC37EB3930A3A2F0A423C54 (void);
-// 0x00000043 System.Void VRCamera::Update()
+// 0x00000040 System.Void VRCamera::Update()
 extern void VRCamera_Update_m601AEF9C261F9720E6100732F5208E6F90D6859C (void);
-// 0x00000044 System.Void VRCamera::LateUpdate()
+// 0x00000041 System.Void VRCamera::LateUpdate()
 extern void VRCamera_LateUpdate_mCA56C59360F535D8908FBA353340EE90FA78D105 (void);
-// 0x00000045 System.Void VRCamera::.ctor()
+// 0x00000042 System.Void VRCamera::.ctor()
 extern void VRCamera__ctor_mD54E0E92F4F19415ECA45FFDB340ECFD6B462596 (void);
-static Il2CppMethodPointer s_methodPointers[69] = 
+static Il2CppMethodPointer s_methodPointers[66] = 
 {
 	CalculatePath_Update_mA5C6CA8195B391B247F258E0AC3DAF426EB81D42,
 	CalculatePath__ctor_mA6150866C6AFF01EDA7E405D6508B75B898FF038,
@@ -186,12 +180,6 @@ static Il2CppMethodPointer s_methodPointers[69] =
 	U3CStartLocationServiceU3Ed__7_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m754B9172E4C11DC85C6E255CCB291CDE3DB3F7FE,
 	U3CStartLocationServiceU3Ed__7_System_Collections_IEnumerator_Reset_m776403A93518C26C72B196691A927C8E7D03D511,
 	U3CStartLocationServiceU3Ed__7_System_Collections_IEnumerator_get_Current_m94BAF98065BE277CD64F22A8378A8CA26DF686A4,
-	ImageTracking_Awake_m45163218D2F5CE540465973D9A41DCBC31050A45,
-	ImageTracking_OnEnable_m6DEDEE1663EC7AA2AB1000CF58776EC231A744B7,
-	ImageTracking_OnDisable_m62F1D5572FB9F965AE9E9D881D14D2747FFEE797,
-	ImageTracking_ImageChanged_mDA00F95F698FB3F71F4229530251E403861B9B76,
-	ImageTracking_UpdateImage_m34C65707C9429E72DDE79B5A2800710CF5750904,
-	ImageTracking__ctor_m88C12006AC3BAED3DAA4F0E0544DAA5294D96A5A,
 	Followcam_Start_m21833A09EABF9831CFBFD353340BAC2E0851C76D,
 	Followcam_Update_m5CF9FB6277D3A3AC3B63057BB233E21CDE199132,
 	Followcam__ctor_m0E0070096C115486FD2D0327B5AF3CD8088741E0,
@@ -216,13 +204,16 @@ static Il2CppMethodPointer s_methodPointers[69] =
 	SceneManagement_ARNavigation_m6A70F02AA67D2431BBBDEAA46CE1AED4FE6DBED7,
 	SceneManagement_ScanRoom_mCE93A704F4EA9505E0660AF7B99164FAD5D1CBAC,
 	SceneManagement_view360_mDF78AFE643058BF01B74BCF18D11FAC1804415E3,
+	SceneManagement_roomview_m2D7B5EB44DFBC8690C873B64AF59303DCA6751DD,
+	SceneManagement_officeview_m59A3CDF0D9ED8EDBA2E0BEC75F610848BE90B6F6,
+	SceneManagement_maclabview_mE518D6E76BD9EC2E0E1C9B768E1DF8AB6827898F,
 	SceneManagement__ctor_m4BF527C2FDB7A148441317813DDE923896E275F2,
 	VRCamera_Start_m953F6CE608CCB5636DC37EB3930A3A2F0A423C54,
 	VRCamera_Update_m601AEF9C261F9720E6100732F5208E6F90D6859C,
 	VRCamera_LateUpdate_mCA56C59360F535D8908FBA353340EE90FA78D105,
 	VRCamera__ctor_mD54E0E92F4F19415ECA45FFDB340ECFD6B462596,
 };
-static const int32_t s_InvokerIndices[69] = 
+static const int32_t s_InvokerIndices[66] = 
 {
 	4512,
 	4512,
@@ -247,8 +238,8 @@ static const int32_t s_InvokerIndices[69] =
 	4415,
 	4512,
 	4415,
-	7022,
-	7119,
+	7020,
+	7117,
 	4512,
 	4415,
 	4512,
@@ -258,12 +249,6 @@ static const int32_t s_InvokerIndices[69] =
 	4415,
 	4512,
 	4415,
-	4512,
-	4512,
-	4512,
-	3572,
-	3658,
-	4512,
 	4512,
 	4512,
 	4512,
@@ -283,6 +268,9 @@ static const int32_t s_InvokerIndices[69] =
 	4512,
 	3550,
 	3658,
+	4512,
+	4512,
+	4512,
 	4512,
 	4512,
 	4512,
@@ -298,7 +286,7 @@ IL2CPP_EXTERN_C const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule;
 const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule = 
 {
 	"Assembly-CSharp.dll",
-	69,
+	66,
 	s_methodPointers,
 	0,
 	NULL,
